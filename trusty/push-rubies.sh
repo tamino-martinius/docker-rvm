@@ -2,7 +2,7 @@
 
 set -x
 
-source ./rubies
+source ../rubies
 
 if [ "$#" -eq 1 ]; then
     RUBIES=( "${1}" )

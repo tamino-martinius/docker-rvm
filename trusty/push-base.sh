@@ -2,5 +2,5 @@
 
 set -x
 
-source ./rubies
+source ../rubies
 exec docker push ${IMAGE_TAG}:latest

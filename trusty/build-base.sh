@@ -2,6 +2,6 @@
 
 set -x
 
-source ./rubies
+source ../rubies
 
 docker build -t ${IMAGE_TAG} .
