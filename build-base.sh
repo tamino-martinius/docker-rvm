@@ -4,4 +4,4 @@ set -x
 
 source ./rubies
 
-docker build -t ${IMAGE_TAG} .
+docker build -t ${IMAGE_TAG}:utopic .

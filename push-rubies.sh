@@ -9,6 +9,6 @@ if [ "$#" -eq 1 ]; then
 fi;
 
 for RUBY in "${RUBIES[@]}"; do
-    echo "> Pushing ${IMAGE_TAG}:${RUBY}"
-    docker push ${IMAGE_TAG}:${RUBY}
+    echo "> Pushing ${IMAGE_TAG}:utopic-${RUBY}"
+    docker push ${IMAGE_TAG}:utopic-${RUBY}
 done;

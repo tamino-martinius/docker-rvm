@@ -13,13 +13,13 @@ fi;
 for RUBY in "${RUBIES[@]}"; do
     DOCKERFILE="work/dockerfile-${RUBY}"
     cat > $DOCKERFILE <<EOF
-FROM ${IMAGE_TAG}:latest
+FROM ${IMAGE_TAG}:utopic
 
 RUN bash -c 'source ~/.rvm/scripts/rvm && rvm install ${RUBY}'
 EOF
 
     echo "> Making ${IMAGE_TAG}:${RUBY}"
-    docker build --tag="${IMAGE_TAG}:${RUBY}" --file="${DOCKERFILE}" work
+    docker build --tag="${IMAGE_TAG}:utopic-${RUBY}" --file="${DOCKERFILE}" work
 
     if [ -f "${DOCKERFILE}" ]; then
         rm -f $DOCKERFILE
