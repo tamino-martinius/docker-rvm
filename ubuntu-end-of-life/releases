@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+export RELEASES=(lucid maverick natty oneiric precise quantal raring saucy utopic vivid wily yakkety zesty)
