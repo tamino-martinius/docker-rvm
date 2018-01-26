@@ -25,9 +25,9 @@ for RELEASE in "${RELEASES[@]}"; do
 
     echo "> Making ${TAG}"
 
-    # docker build --tag="${TAG}" --file="${DOCKERFILE}" "${BUILD_DIR}"
+    docker build --tag="${TAG}" --file="${DOCKERFILE}" "${BUILD_DIR}"
 
-    # if [ -f "${DOCKERFILE}" ]; then
-    #     rm -f $DOCKERFILE
-    # fi;
+    if [ -f "${DOCKERFILE}" ]; then
+        rm -f $DOCKERFILE
+    fi;
 done;
