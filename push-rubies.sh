@@ -4,7 +4,7 @@ set -x
 
 source ./rubies
 
-if [ -n $1 ]; then
+if [ "$#" -eq 1 ]; then
     RUBIES=( "${1}" )
 fi;
 
