@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+export RELEASES=(trusty xenial artful)
