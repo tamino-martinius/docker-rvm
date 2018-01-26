@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+export LTS_RELEASES=(trusty xenial)
+export CURRENT_RELEASES=(artful)
+export FUTURE_RELEASES=(bionic)
+export RELEASES=("${LTS_RELEASES[@]}" "${CURRENT_RELEASES[@]}" "${FUTURE_RELEASES[@]}")
