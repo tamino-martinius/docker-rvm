@@ -1,6 +1,7 @@
-FROM ubuntu:trusty
+FROM ubuntu:utopic
 
 # Grab the bare necessities for installing RVM and some Rubies
+RUN sudo sed -i 's/archive/old-releases/g' /etc/apt/sources.list
 RUN apt-get update && \
     apt-get install -yq git build-essential curl gnupg && \
     useradd -c "RVM User" -d /home/rvm -G sudo -s /bin/bash -m rvm
