@@ -2,7 +2,7 @@
 
 set -x
 
-source ./rubies
+source ../rubies
 
 mkdir -p work
 
