@@ -25,3 +25,38 @@ If you want to use a different Ubuntu release you can add the release name as su
 
 Please Note: Ubuntu releases which are in end of life have their package sources
 changed to `old-releases` archive of ubuntu.
+
+## Rubies
+
+* `2.2.5`
+* `2.2.6`
+* `2.3.0`
+* `2.3.1`
+* `jruby`
+* `jruby-9.1.2.0`
+* `ruby-head`
+
+## Ubuntu
+
+### Current
+
+* `trusty`
+* `xenial`
+* `artful`
+* `bionic`
+
+### End Of Life
+
+* `lucid`
+* `maverick`
+* `natty`
+* `oneiric`
+* `precise`
+* `quantal`
+* `raring`
+* `saucy`
+* `utopic`
+* `vivid`
+* `wily`
+* `yakkety`
+* `zesty`
