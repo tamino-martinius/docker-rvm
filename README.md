@@ -16,19 +16,7 @@ installed on it. There are however additional tags with Rubies pre-installed:
 * `taminomartinius/rvm:ruby-head` - Ruby (MRI)'s latest `HEAD` at the time of image
   creation
 
-### Ubuntu Releases
-
-If you want to use a different Ubuntu release you can add the release name as suffix:
-
-* `taminomartinius/rvm:2.3.0-trusty` - Ruby (MRI) 2.3.0 on Ubuntu Trusty Tahr
-* `taminomartinius/rvm:2.3.1-utopic` - Ruby (MRI) 2.3.1 on Ubuntu Utopic Unicorn
-
-Please Note: Ubuntu releases which are in end of life have their package sources
-changed to `old-releases` archive of ubuntu.
-
-## Available Options
-
-### Ruby Versions
+The available Ruby Versions are:
 
 * `2.2.5`
 * `2.2.6`
@@ -38,7 +26,14 @@ changed to `old-releases` archive of ubuntu.
 * `jruby-9.1.2.0`
 * `ruby-head`
 
-### Ubuntu
+### Ubuntu Releases
+
+If you want to use a different Ubuntu release you can add the release name as suffix:
+
+* `taminomartinius/rvm:2.3.0-trusty` - Ruby (MRI) 2.3.0 on Ubuntu Trusty Tahr
+* `taminomartinius/rvm:2.3.1-utopic` - Ruby (MRI) 2.3.1 on Ubuntu Utopic Unicorn
+
+The available Ubuntu Releases are:
 
 #### Current
 
@@ -62,3 +57,6 @@ changed to `old-releases` archive of ubuntu.
 * `wily`
 * `yakkety`
 * `zesty`
+
+Please Note: Ubuntu releases which are in end of life have their package sources
+changed to `old-releases` archive of ubuntu.
