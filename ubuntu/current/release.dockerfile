@@ -1,9 +1,9 @@
 FROM ubuntu:${RELEASE}
 
 # Grab the bare necessities for installing RVM and some Rubies
-RUN apt-get update && \
-apt-get install -yq git build-essential curl gnupg && \
-useradd -c "RVM User" -d /home/rvm -G sudo -s /bin/bash -m rvm
+RUN apt-get update
+RUN apt-get install -yq git build-essential curl gpg dirmngr
+RUN useradd -c "RVM User" -d /home/rvm -G sudo -s /bin/bash -m rvm
 
 USER rvm
 
