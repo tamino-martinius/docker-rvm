@@ -25,6 +25,6 @@ for RELEASE in "${RELEASES[@]}"; do
     for RUBY in "${RUBIES[@]}"; do
         TAG="${RUBY}-${RELEASE}"
         echo "> Pushing ${TAG}"
-        docker push "${IMAGE_TAG}:${TAG}"
+        docker push ${IMAGE_TAG}:${TAG}
     done;
 done;
