@@ -13,6 +13,7 @@ if [ "$#" -gt 0 ]; then
 fi;
 
 source "${STAGE}/releases"
+source ../rubies
 
 if [ "$#" -eq 2 ]; then
     RELEASES=( "${2}" )
