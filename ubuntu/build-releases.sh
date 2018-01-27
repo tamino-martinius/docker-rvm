@@ -23,9 +23,9 @@ for RELEASE in "${RELEASES[@]}"; do
     DOCKERFILE="${BUILD_DIR}/${TAG}.dockerfile"
     eval "cat > $DOCKERFILE <<EOF"$'\n'$"$(<${STAGE}/release.dockerfile)"$'\n'$"EOF" 2> /dev/null
 
-    echo "> Making ${TAG}"
+    echo "> Making ${IMAGE_TAG}:${TAG}"
 
-    docker build --tag="${TAG}" --file="${DOCKERFILE}" "${BUILD_DIR}"
+    docker build --tag=${IMAGE_TAG}:${TAG} --file="${DOCKERFILE}" "${BUILD_DIR}/.."
 
     if [ -f "${DOCKERFILE}" ]; then
         rm -f $DOCKERFILE
