@@ -26,7 +26,9 @@ If you want to use a different Ubuntu release you can add the release name as su
 Please Note: Ubuntu releases which are in end of life have their package sources
 changed to `old-releases` archive of ubuntu.
 
-## Rubies
+## Available Options
+
+### Ruby Versions
 
 * `2.2.5`
 * `2.2.6`
@@ -36,16 +38,16 @@ changed to `old-releases` archive of ubuntu.
 * `jruby-9.1.2.0`
 * `ruby-head`
 
-## Ubuntu
+### Ubuntu
 
-### Current
+#### Current
 
 * `trusty`
 * `xenial`
 * `artful`
 * `bionic`
 
-### End Of Life
+#### End Of Life
 
 * `lucid`
 * `maverick`
