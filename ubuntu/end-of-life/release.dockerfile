@@ -7,9 +7,11 @@ SHELL ["bash", "-c"]
 RUN sed -i 's/archive/old-releases/g' /etc/apt/sources.list
 
 # Grab the bare necessities for installing RVM and some Rubies
-RUN apt-get update && \
-apt-get install -yq git build-essential curl gnupg && \
-useradd -c "RVM User" -d /home/rvm -G sudo -s /bin/bash -m rvm
+RUN apt-get update
+RUN apt-get install -yq build-essential curl
+RUN apt-get install -yq git || apt-get install -yq git-core
+RUN apt-get install -yq gpg || apt-get install -yq gnupg
+RUN useradd -c "RVM User" -d /home/rvm -G sudo -s /bin/bash -m rvm
 
 USER rvm
 
