@@ -4,7 +4,7 @@ FROM ubuntu:${RELEASE}
 SHELL ["bash", "-c"]
 
 # Change package source to end of life archives
-RUN sudo sed -i 's/archive/old-releases/g' /etc/apt/sources.list
+RUN sed -i 's/archive/old-releases/g' /etc/apt/sources.list
 
 # Grab the bare necessities for installing RVM and some Rubies
 RUN apt-get update && \
