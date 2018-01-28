@@ -1,5 +1,8 @@
 FROM ubuntu:${RELEASE}
 
+# Use bash as default shell
+SHELL ["bash", "-c"]
+
 # Change package source to end of life archives
 RUN sudo sed -i 's/archive/old-releases/g' /etc/apt/sources.list
 

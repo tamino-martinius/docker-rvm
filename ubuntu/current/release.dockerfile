@@ -1,5 +1,8 @@
 FROM ubuntu:${RELEASE}
 
+# Use bash as default shell
+SHELL ["bash", "-c"]
+
 # Grab the bare necessities for installing RVM and some Rubies
 RUN apt-get update
 RUN apt-get install -yq git build-essential curl gpg dirmngr
