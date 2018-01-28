@@ -3,6 +3,8 @@
 This repository contains some `Dockerfile` code for building containers which
 come pre-baked with RVM.
 
+*Please Note:* There are currently not all Ubuntu Versions available - most are Work in Progress
+
 ## Tags
 
 ### Ruby Versions
@@ -55,25 +57,25 @@ The available Ubuntu Releases are:
 #### Current
 
 * `trusty`
-* `xenial`
-* `artful`
-* `bionic`
+* `xenial` (rubies are WIP)
+* `artful` (rubies are WIP)
+* `bionic` (rubies are WIP)
 
 #### End Of Life
 
-* `lucid`
-* `maverick`
-* `natty`
-* `oneiric`
-* `precise`
-* `quantal`
-* `raring`
-* `saucy`
-* `utopic`
-* `vivid`
-* `wily`
-* `yakkety`
-* `zesty`
+* `lucid` (release is WIP)
+* `maverick` (release is WIP)
+* `natty` (release is WIP)
+* `oneiric` (release is WIP)
+* `precise` (release is WIP)
+* `quantal` (release is WIP)
+* `raring` (release is WIP)
+* `saucy` (release is WIP)
+* `utopic` (release is WIP)
+* `vivid` (release is WIP)
+* `wily` (release is WIP)
+* `yakkety` (release is WIP)
+* `zesty` (release is WIP)
 
 Please Note: Ubuntu releases which are in end of life have their package sources
 changed to `old-releases` archive of ubuntu.
