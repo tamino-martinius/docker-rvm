@@ -16,3 +16,5 @@ curl -sSL https://get.rvm.io | bash -s stable
 
 COPY sudoers /etc/sudoers.d/10-sudo-nopasswd
 COPY rvmrc /home/rvm/.rvmrc
+
+ENV PATH "$PATH:~/.rvm/bin"
