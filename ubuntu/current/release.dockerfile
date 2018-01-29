@@ -5,7 +5,7 @@ SHELL ["bash", "-c"]
 
 # Grab the bare necessities for installing RVM and some Rubies
 RUN apt-get update
-RUN apt-get install -yq git build-essential curl dirmngr
+RUN apt-get install -yq git build-essential curl dirmngr sudo
 RUN apt-get install -yq gpg || apt-get install -yq gnupg
 RUN useradd -c "RVM User" -d /home/rvm -G sudo -s /bin/bash -m rvm
 
